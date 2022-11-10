@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #030303;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #363636;
+    display: flex;
+
+}
+
+h1{
+    color: whitesmoke;
+    align-self: center;
+    margin-left: 28rem;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*--Search-box---------------*/
+.search-box {
+    background-color: #d1d1d111;
+    padding: 3px 20px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: 3rem;
+    margin-right: 20px;
+    margin-left: 12rem;
+	padding: 0.5rem 1rem;
+}
+.search-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.search-box input::placeholder {
+    color: #ffffff5e;
+}
+.search-box button {
+    background-color: transparent;
+    border: none;
+    color: #ffffffc9;
+    outline: none;
+    cursor: pointer;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.anime {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    justify-content: center;
+    align-content: center;
+    width: 265px;
+}
+
+.anime img {
+    width: 100%;
+}
+
+.anime-info {
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.anime-info h3 {
+    margin: 0;
+}
+
+.anime-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.8rem;
+
+}
+.anime-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.anime-info span.orange {
+    color: orange;
+}
+
+.anime-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.anime:hover .overview {
+    transform: translateY(0);
+}

@@ -1,0 +1,11 @@
+
+<div class="anime">
+    <img src="{{anime.attributes.posterImage['original']}}" alt="{{anime.attributes.titles['en']}}"/>
+    <div class="anime-info">
+        <h3>{{anime.attributes.titles['en'] || anime.attributes.titles['en_jp']}}</h3>
+        <span class="{{getClassByRate(anime.attributes.averageRating)}}">{{anime.attributes.averageRating}}</span>
+    </div>
+    <div class="overview">
+    <h3>Overview:</h3>{{anime.attributes.description}}
+    </div>
+</div>
